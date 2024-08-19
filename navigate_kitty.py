@@ -2,13 +2,10 @@ from kittens.tui.handler import result_handler
 from typing import List
 from kitty.boss import Boss
 
-
 def main():
     pass
 
-
 directions = ["right", "left", "top", "bottom"]
-
 
 @result_handler(no_ui=True)
 def handle_result(args: List[str], result: str, target_window_id: int, boss: Boss):
